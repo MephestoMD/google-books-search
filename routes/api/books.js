@@ -7,7 +7,7 @@ router.route("/").get(booksController.findAll).post(booksController.save);
 // /api/books/:id to find a book by specific book or delete a specific book from a collection
 router
   .route("/:id")
-  .get(booksController.findOne)
+  .get(booksController.findById)
   .delete(booksController.remove);
 
 module.exports = router;
