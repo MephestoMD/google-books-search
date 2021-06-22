@@ -1,4 +1,9 @@
+import React, { Component } from "react";
+import { Route, Redirect, Switch } from "react-router-dom";
 import "./App.css";
+import NavBar from "./components/NavBar";
+import Saved from "./pages/Saved";
+import Search from "./pages/Search";
 
 function App() {
   return (
