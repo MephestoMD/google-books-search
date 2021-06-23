@@ -2,11 +2,14 @@
   "name": "google-books-search",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "engines": {
+    "node": "14.17.1",
+    "npm": "7.18.1"
+  },
   "main": "server.js",
   "dependencies": {
     "ansi-colors": "^3.2.4",
     "axios": "^0.21.1",
-    "chokidar": "^2.1.8",
     "commander": "^2.20.3",
     "define-property": "^0.2.5",
     "dotenv": "^10.0.0",
