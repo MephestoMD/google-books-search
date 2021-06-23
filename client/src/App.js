@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Saved from "./pages/Saved";
 import Search from "./pages/Search";
+import NotFound from "./pages/Not-Found/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/search" component={Search} />
           <Route path="/saved" component={Saved} />
+          <Route path="/not-found" component={NotFound} />
           <Redirect from="/" exact to="/search" />
           <Redirect to="/not-found" />
         </Switch>

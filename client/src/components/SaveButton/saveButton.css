@@ -1,0 +1,9 @@
+.save-btn {
+  float: right;
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.save-btn:hover {
+  opacity: 1;
+}

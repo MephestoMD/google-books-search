@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   // Gets all books matching query from Google Books API
   getGoogleBooks: function (queryBook) {
@@ -11,12 +12,16 @@ export default {
   getBook: function (id) {
     return axios.get("/api/books/" + id);
   },
+  // Get all currently saved books
+  getBooks: function () {
+    return axios.get("/api/books/");
+  },
   // Deletes the book with the given id
   deleteBook: function (id) {
     return axios.delete("/api/books/" + id);
   },
   // Saves a book to the database
-  saveBook: function (id) {
-    return axios.post("/api/books/" + id);
+  saveBook: function (bookData) {
+    return axios.post("/api/books/", bookData);
   },
 };
