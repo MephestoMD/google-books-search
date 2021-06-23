@@ -1,4 +1,5 @@
 import React from "react";
+import "./deleteButton.css";
 
 const DeleteButton = ({ id, onDelete }) => {
   console.log(id);
